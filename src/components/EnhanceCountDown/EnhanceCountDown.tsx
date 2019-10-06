@@ -1,11 +1,11 @@
-import React from 'react';
+import * as React from 'react';
 import { EnhanceCountDownPropsType, EnhanceCountDownStateType } from './types';
 
 class EnhanceCountDown extends React.PureComponent<
   EnhanceCountDownPropsType,
   EnhanceCountDownStateType
-> {
-  countDownInterval?: NodeJS.Timeout;
+  > {
+  countDownInterval?: number;
 
   constructor(props: EnhanceCountDownPropsType) {
     super(props);

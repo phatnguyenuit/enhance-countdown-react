@@ -16,7 +16,7 @@ const App: React.FC = () => {
                 <Button
                   variant="contained"
                   color="primary"
-                  onClick={enhanceCountDown}
+                  onClick={() => enhanceCountDown()}
                   disabled={pending}
                 >
                   <code>timeout = 30 seconds</code> {timeoutStr}
@@ -33,7 +33,7 @@ const App: React.FC = () => {
                 <Button
                   variant="contained"
                   color="primary"
-                  onClick={enhanceCountDown}
+                  onClick={() => enhanceCountDown()}
                   disabled={pending}
                 >
                   <code>decreaseTimeout = 10 seconds</code> {timeoutStr}
@@ -54,7 +54,7 @@ const App: React.FC = () => {
                 <Button
                   variant="contained"
                   color="primary"
-                  onClick={enhanceCountDown}
+                  onClick={() => enhanceCountDown()}
                   disabled={pending}
                 >
                   <code>intervalTimeout = 2000 ms</code> {timeoutStr}
