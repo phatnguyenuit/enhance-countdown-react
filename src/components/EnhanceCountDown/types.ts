@@ -1,16 +1,16 @@
-export interface EnhanceCountDownPropsType {
+export interface EnhanceCountDownProps {
   timeout: number;
   decreaseTimeout?: number;
   intervalTimeout?: number;
-  children(props: InjectedCountDownProps): JSX.Element;
+  children(props: RenderCountDownProps): JSX.Element;
 }
 
-export interface EnhanceCountDownStateType {
+export interface EnhanceCountDownState {
   finished: boolean;
   pending: boolean;
   timeout: number;
 }
 
-interface InjectedCountDownProps extends EnhanceCountDownStateType {
+interface RenderCountDownProps extends EnhanceCountDownState {
   enhanceCountDown: Function;
 }
